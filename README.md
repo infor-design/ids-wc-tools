@@ -30,24 +30,21 @@ Output should be similar to the following:
 ## How It Works
 
 ### `ids-wc-scaffold`
-Generates the Simply runs through `mappings` files of a given type (mixins/components) and:
+Generates the runs through `mappings` files of a given type (mixins/components) and:
   1. adds directories from `srcDirs.js` if they don't exist,
   2. adds files from `srcFiles.js` if they don't exist
-  3. replaces all instances of patterns found in files using Regexp, and replaces the groups found in `replacement.js`
-
-  *(note: recursive patterns for capture group will not be supported here for the principle of KISS)*
+  3. replaces all instances of patterns found in files using Regexp, and replaces the groups found in `replacement.js`  *(note: recursive patterns for capture groups are not tested/supported)*
 
 
   ## TODO
   - add `mixins` cmd param to work with entries which can use regexp group to capture/transform;  can be done with approach similar to existing `[namespace]/replacements.js`
 
 ## Notes
-- mixins are already just about supported but waiting on a directory structure to input in the structure.
+- mixins are already just about supported but waiting on a directory structure to input the structure within the `mappings` files.
 
 
 - This project aims to eventually support validation but is *not meant as a code analysis tool or tokenizer* due to simple limitations of regex capture (not a substitute for proper tokenization) and time constraints;
 
-  For certain tasks of that nature to be done effectively, we would need to either import a solution-for or build a lexer/parser for ES7 which is not pragmatic in the low priority scope of this utility set.
+  For certain tasks of that nature to be done effectively, we would need to either import a solution-for or build a lexer/parser for ES7 which is not pragmatic in short term with scope/low priority of these tools.
 
   Change requests are welcome but before introducing complexity to manage, please keep the above in mind.
->>>>>>> f1ccb24... initial commit -- base component/mixin templating
