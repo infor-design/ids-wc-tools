@@ -1,4 +1,4 @@
-# ids-wc-tools
+## IDS WC Tools
 Tools to scaffold web components on `infor-design/enterprise-wc`.
 
 ## Installation
