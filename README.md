@@ -1,4 +1,4 @@
-## IDS WC Tools
+# IDS Web Component Scaffolding Tools
 Tools to scaffold web components on `infor-design/enterprise-wc`.
 
 ## Installation
@@ -38,6 +38,7 @@ Generates the runs through `mappings` files of a given type (mixins/components) 
 
   ## TODO
   - add `mixins` cmd param to work with entries which can use regexp group to capture/transform;  can be done with approach similar to existing `[namespace]/replacements.js`
+  - basic eslinting
 
 ## Notes
 - mixins are already just about supported but waiting on a directory structure to input the structure within the `mappings` files.
