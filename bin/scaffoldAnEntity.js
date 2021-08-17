@@ -17,9 +17,10 @@ if(namespace === undefined) {
   );
 }
 
-const srcDirs = require(`../mappings/${type}/srcDirs`)(args);
-const srcFiles = require(`../mappings/${type}/srcFiles`)(args);
-const replacements = require(`../mappings/${type}/replacements`)(args);
+const mappingDir = `../mappings/wc/${type}`;
+const srcDirs = require(`${mappingDir}/srcDirs`)(args);
+const srcFiles = require(`${mappingDir}/srcFiles`)(args);
+const replacements = require(`${mappingDir}/replacements`)(args);
 
 for(const { relativeDir } of srcDirs) {
   const dirPath = path.join(process.cwd(), relativeDir);
